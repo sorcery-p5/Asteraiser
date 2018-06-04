@@ -1,0 +1,33 @@
+#pragma once
+
+
+namespace P5
+{
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//	タイマー
+//
+////////////////////////////////////////////////////////////////////////////////
+class Timer
+{
+public:
+	Timer( void );
+	~Timer();
+
+	void				Wait( void );
+
+private:
+	enum
+	{
+		INTERVAL		= 16,
+		WAIT_MIN		= 3,
+	};
+
+private:
+	uint				m_MinPeriod;
+	dword				m_PrevTime;
+};
+
+
+};

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sign">
+      <UniqueIdentifier>{f643a37f-ad32-4bd2-9f2c-162b33d4275b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{2b610233-bf96-4cd3-804f-a7d2ee99514f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix">
+      <UniqueIdentifier>{8906b1d5-9360-469a-a5df-b8acd731ef81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\Sprite">
+      <UniqueIdentifier>{0cd2fe59-5492-4a16-9176-47749810f431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\Texture">
+      <UniqueIdentifier>{eedb4dd2-4c91-4999-8704-7c5aa6290ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\Piece">
+      <UniqueIdentifier>{8d2021be-35f0-4df0-abf8-308aeded6440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\Font">
+      <UniqueIdentifier>{ab163e12-1895-437c-afcf-9350ec1a1b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\DrawItem">
+      <UniqueIdentifier>{ef89b836-c883-4077-b627-98d2ea39553a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphix\Shape">
+      <UniqueIdentifier>{66249e03-c48b-49e5-9085-f1ceccc04662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tone">
+      <UniqueIdentifier>{12eac773-0208-4e3c-9862-3972b3b43251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tone\Device">
+      <UniqueIdentifier>{e2539b6e-7a11-4499-a406-95ff2d0199d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tone\Object">
+      <UniqueIdentifier>{5a3c6396-1423-432c-8479-6e03daf3b0b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tone\File">
+      <UniqueIdentifier>{32fa20f5-cfa3-434d-bcb4-3bd080d7e9ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{579748f6-2374-486c-8ac9-c62c0ee311a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Arith">
+      <UniqueIdentifier>{6312c2b3-3412-4376-b41b-f3d4583f6e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Util">
+      <UniqueIdentifier>{636c5649-368e-4c67-a038-b800c44bcbe8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sign\Keyboard.cpp">
+      <Filter>Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="Sign\Mouse.cpp">
+      <Filter>Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="Sign\Pad.cpp">
+      <Filter>Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="Sign\PadManager.cpp">
+      <Filter>Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="Sign\Sign.cpp">
+      <Filter>Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Timer.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Window.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\DrawDevice.cpp">
+      <Filter>Graphix</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Graphix.cpp">
+      <Filter>Graphix</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Sprite\FontSprite.cpp">
+      <Filter>Graphix\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Sprite\LineSprite.cpp">
+      <Filter>Graphix\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Sprite\RectSprite.cpp">
+      <Filter>Graphix\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Sprite\RingSprite.cpp">
+      <Filter>Graphix\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Sprite\Sprite.cpp">
+      <Filter>Graphix\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Texture\Texture.cpp">
+      <Filter>Graphix\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Piece\ArrayPiece.cpp">
+      <Filter>Graphix\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Piece\PagePiece.cpp">
+      <Filter>Graphix\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Piece\RectPiece.cpp">
+      <Filter>Graphix\Piece</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Font\Font.cpp">
+      <Filter>Graphix\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\DrawItem\DrawItem.cpp">
+      <Filter>Graphix\DrawItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\DrawItem\DrawItemManager.cpp">
+      <Filter>Graphix\DrawItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\Shape.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\ShapeArrowLine.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\ShapeCircle.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\ShapeLine.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\ShapePolygon.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphix\Shape\ShapeSolidLine.cpp">
+      <Filter>Graphix\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\OggLoader.cpp">
+      <Filter>Tone</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Sound.cpp">
+      <Filter>Tone</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Tone.cpp">
+      <Filter>Tone</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Device\SoundDeviceDSound.cpp">
+      <Filter>Tone\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Device\SoundDeviceXAudio.cpp">
+      <Filter>Tone\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Object\SoundObjectDSound.cpp">
+      <Filter>Tone\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\Object\SoundObjectXAudio.cpp">
+      <Filter>Tone\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\File\SoundFile.cpp">
+      <Filter>Tone\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\File\SoundFileOgg.cpp">
+      <Filter>Tone\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Tone\File\SoundFileWave.cpp">
+      <Filter>Tone\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Arith\Angle.cpp">
+      <Filter>Common\Arith</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Arith\Arith.cpp">
+      <Filter>Common\Arith</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Arith\Matrix3.cpp">
+      <Filter>Common\Arith</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Arith\Rand.cpp">
+      <Filter>Common\Arith</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Arith\Rect.cpp">
+      <Filter>Common\Arith</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Util\Alert.cpp">
+      <Filter>Common\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Util\Color.cpp">
+      <Filter>Common\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Util\Directory.cpp">
+      <Filter>Common\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Util\EnumUtil.cpp">
+      <Filter>Common\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Util\XML.cpp">
+      <Filter>Common\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="P5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sign\Keyboard.h">
+      <Filter>Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="Sign\Mouse.h">
+      <Filter>Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="Sign\Pad.h">
+      <Filter>Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="Sign\PadManager.h">
+      <Filter>Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="Sign\Sign.h">
+      <Filter>Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Timer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Window.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\DrawDevice.h">
+      <Filter>Graphix</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Graphix.h">
+      <Filter>Graphix</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Sprite\FontSprite.h">
+      <Filter>Graphix\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Sprite\LineSprite.h">
+      <Filter>Graphix\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Sprite\RectSprite.h">
+      <Filter>Graphix\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Sprite\RingSprite.h">
+      <Filter>Graphix\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Sprite\Sprite.h">
+      <Filter>Graphix\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Texture\Texture.h">
+      <Filter>Graphix\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Piece\ArrayPiece.h">
+      <Filter>Graphix\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Piece\PagePiece.h">
+      <Filter>Graphix\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Piece\Piece.h">
+      <Filter>Graphix\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Piece\RectPiece.h">
+      <Filter>Graphix\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Font\Font.h">
+      <Filter>Graphix\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\DrawItem\DrawItem.h">
+      <Filter>Graphix\DrawItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\DrawItem\DrawItemManager.h">
+      <Filter>Graphix\DrawItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\Shape.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\ShapeArrowLine.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\ShapeCircle.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\ShapeLine.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\ShapePolygon.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphix\Shape\ShapeSolidLine.h">
+      <Filter>Graphix\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\OggLoader.h">
+      <Filter>Tone</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Sound.h">
+      <Filter>Tone</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Tone.h">
+      <Filter>Tone</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Device\SoundDevice.h">
+      <Filter>Tone\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Device\SoundDeviceDSound.h">
+      <Filter>Tone\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Device\SoundDeviceXAudio.h">
+      <Filter>Tone\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Object\SoundObject.h">
+      <Filter>Tone\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Object\SoundObjectDSound.h">
+      <Filter>Tone\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\Object\SoundObjectXAudio.h">
+      <Filter>Tone\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\File\SoundFile.h">
+      <Filter>Tone\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\File\SoundFileOgg.h">
+      <Filter>Tone\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Tone\File\SoundFileWave.h">
+      <Filter>Tone\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Angle.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Arith.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Matrix3.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Point.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Rand.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Arith\Rect.h">
+      <Filter>Common\Arith</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Alert.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Color.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Directory.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\EnumUtil.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\HandlePtr.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Label.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Memory.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\RefPtr.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\String.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\Template.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Util\XML.h">
+      <Filter>Common\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="P5.h" />
+  </ItemGroup>
+</Project>

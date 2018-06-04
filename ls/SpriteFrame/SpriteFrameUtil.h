@@ -1,0 +1,19 @@
+#pragma once
+
+#include "SpriteFrameTypes.h"
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//	スプライトフレーム：ユーティリティ
+//
+////////////////////////////////////////////////////////////////////////////////
+class SpriteFrameUtil
+{
+public:
+	static void	SetDrawDummyBone( bool bEnable );
+	static bool	IsDrawDummyBone( void );
+
+private:
+	static bool s_bDrawDummyBone;
+};

@@ -1,0 +1,16 @@
+#pragma once
+
+#include "Resource.h"
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//	フォントリソース
+//
+////////////////////////////////////////////////////////////////////////////////
+class FontResource : public ResourceTemplate< Font, RES_FONT >
+{
+public:
+	virtual void			Reset( void )			{ m_pData->Reset(); }
+	virtual void			Restore( void )			{ m_pData->Restore(); }
+};

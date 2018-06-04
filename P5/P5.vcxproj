@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Master|Win32">
+      <Configuration>Master</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C95557EB-3C26-4DA6-87DB-7F6DCF181C99}</ProjectGuid>
+    <RootNamespace>P5</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Out/$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Out/$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">$(SolutionDir)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">Out/$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>P5.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_d.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)_d$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>P5.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>P5.h</PrecompiledHeaderFile>
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sign\Keyboard.cpp" />
+    <ClCompile Include="Sign\Mouse.cpp" />
+    <ClCompile Include="Sign\Pad.cpp" />
+    <ClCompile Include="Sign\PadManager.cpp" />
+    <ClCompile Include="Sign\Sign.cpp" />
+    <ClCompile Include="System\Timer.cpp" />
+    <ClCompile Include="System\Window.cpp" />
+    <ClCompile Include="Graphix\DrawDevice.cpp" />
+    <ClCompile Include="Graphix\Graphix.cpp" />
+    <ClCompile Include="Graphix\Sprite\FontSprite.cpp" />
+    <ClCompile Include="Graphix\Sprite\LineSprite.cpp" />
+    <ClCompile Include="Graphix\Sprite\RectSprite.cpp" />
+    <ClCompile Include="Graphix\Sprite\RingSprite.cpp" />
+    <ClCompile Include="Graphix\Sprite\Sprite.cpp" />
+    <ClCompile Include="Graphix\Texture\Texture.cpp" />
+    <ClCompile Include="Graphix\Piece\ArrayPiece.cpp" />
+    <ClCompile Include="Graphix\Piece\PagePiece.cpp" />
+    <ClCompile Include="Graphix\Piece\RectPiece.cpp" />
+    <ClCompile Include="Graphix\Font\Font.cpp" />
+    <ClCompile Include="Graphix\DrawItem\DrawItem.cpp" />
+    <ClCompile Include="Graphix\DrawItem\DrawItemManager.cpp" />
+    <ClCompile Include="Graphix\Shape\Shape.cpp" />
+    <ClCompile Include="Graphix\Shape\ShapeArrowLine.cpp" />
+    <ClCompile Include="Graphix\Shape\ShapeCircle.cpp" />
+    <ClCompile Include="Graphix\Shape\ShapeLine.cpp" />
+    <ClCompile Include="Graphix\Shape\ShapePolygon.cpp" />
+    <ClCompile Include="Graphix\Shape\ShapeSolidLine.cpp" />
+    <ClCompile Include="Tone\OggLoader.cpp" />
+    <ClCompile Include="Tone\Sound.cpp" />
+    <ClCompile Include="Tone\Tone.cpp" />
+    <ClCompile Include="Tone\Device\SoundDeviceDSound.cpp" />
+    <ClCompile Include="Tone\Device\SoundDeviceXAudio.cpp" />
+    <ClCompile Include="Tone\Object\SoundObjectDSound.cpp" />
+    <ClCompile Include="Tone\Object\SoundObjectXAudio.cpp" />
+    <ClCompile Include="Tone\File\SoundFile.cpp" />
+    <ClCompile Include="Tone\File\SoundFileOgg.cpp" />
+    <ClCompile Include="Tone\File\SoundFileWave.cpp" />
+    <ClCompile Include="Common\Arith\Angle.cpp" />
+    <ClCompile Include="Common\Arith\Arith.cpp" />
+    <ClCompile Include="Common\Arith\Matrix3.cpp" />
+    <ClCompile Include="Common\Arith\Rand.cpp" />
+    <ClCompile Include="Common\Arith\Rect.cpp" />
+    <ClCompile Include="Common\Util\Alert.cpp" />
+    <ClCompile Include="Common\Util\Color.cpp" />
+    <ClCompile Include="Common\Util\Directory.cpp" />
+    <ClCompile Include="Common\Util\EnumUtil.cpp" />
+    <ClCompile Include="Common\Util\XML.cpp" />
+    <ClCompile Include="P5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sign\Keyboard.h" />
+    <ClInclude Include="Sign\Mouse.h" />
+    <ClInclude Include="Sign\Pad.h" />
+    <ClInclude Include="Sign\PadManager.h" />
+    <ClInclude Include="Sign\Sign.h" />
+    <ClInclude Include="System\Timer.h" />
+    <ClInclude Include="System\Window.h" />
+    <ClInclude Include="Graphix\DrawDevice.h" />
+    <ClInclude Include="Graphix\Graphix.h" />
+    <ClInclude Include="Graphix\Sprite\FontSprite.h" />
+    <ClInclude Include="Graphix\Sprite\LineSprite.h" />
+    <ClInclude Include="Graphix\Sprite\RectSprite.h" />
+    <ClInclude Include="Graphix\Sprite\RingSprite.h" />
+    <ClInclude Include="Graphix\Sprite\Sprite.h" />
+    <ClInclude Include="Graphix\Texture\Texture.h" />
+    <ClInclude Include="Graphix\Piece\ArrayPiece.h" />
+    <ClInclude Include="Graphix\Piece\PagePiece.h" />
+    <ClInclude Include="Graphix\Piece\Piece.h" />
+    <ClInclude Include="Graphix\Piece\RectPiece.h" />
+    <ClInclude Include="Graphix\Font\Font.h" />
+    <ClInclude Include="Graphix\DrawItem\DrawItem.h" />
+    <ClInclude Include="Graphix\DrawItem\DrawItemManager.h" />
+    <ClInclude Include="Graphix\Shape\Shape.h" />
+    <ClInclude Include="Graphix\Shape\ShapeArrowLine.h" />
+    <ClInclude Include="Graphix\Shape\ShapeCircle.h" />
+    <ClInclude Include="Graphix\Shape\ShapeLine.h" />
+    <ClInclude Include="Graphix\Shape\ShapePolygon.h" />
+    <ClInclude Include="Graphix\Shape\ShapeSolidLine.h" />
+    <ClInclude Include="Tone\OggLoader.h" />
+    <ClInclude Include="Tone\Sound.h" />
+    <ClInclude Include="Tone\Tone.h" />
+    <ClInclude Include="Tone\Device\SoundDevice.h" />
+    <ClInclude Include="Tone\Device\SoundDeviceDSound.h" />
+    <ClInclude Include="Tone\Device\SoundDeviceXAudio.h" />
+    <ClInclude Include="Tone\Object\SoundObject.h" />
+    <ClInclude Include="Tone\Object\SoundObjectDSound.h" />
+    <ClInclude Include="Tone\Object\SoundObjectXAudio.h" />
+    <ClInclude Include="Tone\File\SoundFile.h" />
+    <ClInclude Include="Tone\File\SoundFileOgg.h" />
+    <ClInclude Include="Tone\File\SoundFileWave.h" />
+    <ClInclude Include="Common\Arith\Angle.h" />
+    <ClInclude Include="Common\Arith\Arith.h" />
+    <ClInclude Include="Common\Arith\Matrix3.h" />
+    <ClInclude Include="Common\Arith\Point.h" />
+    <ClInclude Include="Common\Arith\Rand.h" />
+    <ClInclude Include="Common\Arith\Rect.h" />
+    <ClInclude Include="Common\Util\Alert.h" />
+    <ClInclude Include="Common\Util\Color.h" />
+    <ClInclude Include="Common\Util\Directory.h" />
+    <ClInclude Include="Common\Util\EnumUtil.h" />
+    <ClInclude Include="Common\Util\HandlePtr.h" />
+    <ClInclude Include="Common\Util\Label.h" />
+    <ClInclude Include="Common\Util\Memory.h" />
+    <ClInclude Include="Common\Util\RefPtr.h" />
+    <ClInclude Include="Common\Util\String.h" />
+    <ClInclude Include="Common\Util\Template.h" />
+    <ClInclude Include="Common\Util\XML.h" />
+    <ClInclude Include="P5.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

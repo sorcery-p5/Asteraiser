@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース">
+      <UniqueIdentifier>{a47685bd-9dc6-4f9f-91f4-cec765e78f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{c5e7a33d-84d2-4672-8989-b58158f90fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{15863a57-b7c6-474f-b17b-467ce209800e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{fe3d76d0-64fe-4e91-be53-b865cfdfc618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Equip">
+      <UniqueIdentifier>{5ae21c73-089f-44b8-89fd-2a34eeae9580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{504a8613-a754-4b5b-a5fd-cc359d3411fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{118c0ec1-9e96-4d0e-b933-ffd2aecbedba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{8886f018-f94d-4d65-be4f-cbe0e94a6d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{7b62a670-c314-470e-98f9-74c201e4628c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpriteFrame">
+      <UniqueIdentifier>{e9317a49-ab1b-4c34-9a22-1380c2ce8433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{26dab6c2-a250-4261-992d-858c719ac01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{b66fc9c5-a191-4f4b-963f-6dbcde895378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect\Move">
+      <UniqueIdentifier>{9fcf3f49-5ce6-4495-a7f8-a32f30285b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collide">
+      <UniqueIdentifier>{24d79715-a430-4dcf-a1db-7e09a675c0f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collide\Shape">
+      <UniqueIdentifier>{f1b07d77-2819-4447-8f4f-fa5f2e85e36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{cc2db60e-bd7a-4f98-b9e0-7db77d6a9cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy\State">
+      <UniqueIdentifier>{1191edca-0a32-4b91-aeed-fbe507585a5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeKey">
+      <UniqueIdentifier>{482929b2-259a-43d1-9abe-1c9542b18d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attack">
+      <UniqueIdentifier>{0de0f072-b725-418b-a545-a4a2f5e29c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attack\Impl">
+      <UniqueIdentifier>{14fbd824-e58b-4438-acad-d4c4679fa999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage">
+      <UniqueIdentifier>{1a03922c-c05a-42f1-b513-462e614e7314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage\Action">
+      <UniqueIdentifier>{c3acb12d-2336-498c-89a7-483b89e530e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{72e14666-fa38-4726-ac35-ba99a6383793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Score">
+      <UniqueIdentifier>{26e46b74-d014-450b-a945-624dfba9cf0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Indicate">
+      <UniqueIdentifier>{49d888a7-1064-4820-bbc4-fdd2059d098b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fade">
+      <UniqueIdentifier>{16e8da18-2f32-463c-98ae-67a706dd0ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{b5354678-69d5-4057-9290-46901e3b255c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Object">
+      <UniqueIdentifier>{cee1c574-7b3a-4c6c-995a-db0755f3e399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BGM">
+      <UniqueIdentifier>{63beeaa1-a4aa-4e4f-ac8d-1d22df893dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SaveData">
+      <UniqueIdentifier>{75cfb512-b3ff-497f-9bfd-47468c2b3f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ground">
+      <UniqueIdentifier>{2b88d3b4-ffa2-406c-996c-045bc167a89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{73778e21-e704-425b-bccf-2f4285b417fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Replay">
+      <UniqueIdentifier>{1e272dd3-9270-4222-a8b5-a5fce92e8ae8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.ico">
+      <Filter>リソース</Filter>
+    </None>
+    <None Include="icon_s.ico">
+      <Filter>リソース</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ls.rc">
+      <Filter>リソース</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>リソース</Filter>
+    </ClInclude>
+    <ClInclude Include="App\App.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldContinue.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldData.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldPause.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldReplayMenu.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldResult.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\WorldTypes.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerData.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerManager.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerTypes.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Blade.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Dash.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Overdrive.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Ruler.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Shield.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Equip\Spear.h">
+      <Filter>Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\ConfigTypes.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\Controller.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ControllerManager.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ControllerTypes.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ManualController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\ReplayController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\SystemController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\TimeCounter.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\XMLLoadUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ConfigScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\EndingScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameoverScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HitTestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayResultScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PracticeScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\RecordScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ReplayScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ReplaySelectScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelectScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TutorialScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\WorldScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrame.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameAnime.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameAnimeData.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameBone.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameFile.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameTypes.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFrame\SpriteFrameUtil.h">
+      <Filter>SpriteFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\FontResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceTypes.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceUtil.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SoundResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\TextureResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectDrawObj.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectFile.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectHolder.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectManager.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectParticle.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectTypes.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Move\EffectMove.h">
+      <Filter>Effect\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Move\EffectMoveCircular.h">
+      <Filter>Effect\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Move\EffectMoveDefault.h">
+      <Filter>Effect\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Move\EffectMoveFollow.h">
+      <Filter>Effect\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Move\EffectMoveVelocity.h">
+      <Filter>Effect\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideCaster.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideFunction.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideObject.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideObjectListener.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideSystem.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\CollideTypes.h">
+      <Filter>Collide</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\Shape\CollideShape.h">
+      <Filter>Collide\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\Shape\CollideShapeFrame.h">
+      <Filter>Collide\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\Shape\CollideShapeLine.h">
+      <Filter>Collide\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\Shape\CollideShapePoint.h">
+      <Filter>Collide\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Collide\Shape\CollideShapeRect.h">
+      <Filter>Collide\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\EnemyData.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\EnemyIndicate.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\EnemyManager.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\EnemyStateData.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\EnemyTypes.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyAction.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyAttackAction.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyMoveAction.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyRotAction.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyState.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy\State\EnemyTarget.h">
+      <Filter>Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeKey\TimeKey.h">
+      <Filter>TimeKey</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeKey\TimeKeyTypes.h">
+      <Filter>TimeKey</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Attack.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\AttackData.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\AttackManager.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\AttackTypes.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackBlade.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackBullet.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackHoming.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackLaser.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackRuler.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Attack\Impl\AttackShield.h">
+      <Filter>Attack\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\Stage.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\StageData.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\StageManager.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\StageState.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\StageTelop.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\StageTypes.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\Action\StageAction.h">
+      <Filter>Stage\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage\Action\StagePlayerMoveAction.h">
+      <Filter>Stage\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Item\Item.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Item\ItemData.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Item\ItemManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Item\ItemTypes.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Score\ScoreData.h">
+      <Filter>Score</Filter>
+    </ClInclude>
+    <ClInclude Include="Score\ScoreManager.h">
+      <Filter>Score</Filter>
+    </ClInclude>
+    <ClInclude Include="Score\ScoreTypes.h">
+      <Filter>Score</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicate\Indicate.h">
+      <Filter>Indicate</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicate\IndicateBase.h">
+      <Filter>Indicate</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicate\IndicateData.h">
+      <Filter>Indicate</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicate\IndicateManager.h">
+      <Filter>Indicate</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicate\IndicateTypes.h">
+      <Filter>Indicate</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade\FadeScreen.h">
+      <Filter>Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuData.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuLayer.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuListener.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\MenuTypes.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuCursor.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuList.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuObject.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuScroll.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuSelector.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Object\MenuSlider.h">
+      <Filter>Menu\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="BGM\BGMManager.h">
+      <Filter>BGM</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData\SaveDataManager.h">
+      <Filter>SaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData\SaveDataTypes.h">
+      <Filter>SaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground\Ground.h">
+      <Filter>Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground\GroundData.h">
+      <Filter>Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground\GroundManager.h">
+      <Filter>Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground\GroundTypes.h">
+      <Filter>Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Replay\ReplayData.h">
+      <Filter>Replay</Filter>
+    </ClInclude>
+    <ClInclude Include="Replay\ReplayDirectory.h">
+      <Filter>Replay</Filter>
+    </ClInclude>
+    <ClInclude Include="Replay\ReplayManager.h">
+      <Filter>Replay</Filter>
+    </ClInclude>
+    <ClInclude Include="Replay\ReplayTypes.h">
+      <Filter>Replay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\App.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldContinue.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldData.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldPause.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldReplayMenu.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\WorldResult.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerData.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerManager.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerTypes.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Blade.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Dash.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Overdrive.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Ruler.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Shield.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Equip\Spear.cpp">
+      <Filter>Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\ConfigTypes.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\Controller.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ControllerManager.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ManualController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\ReplayController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\SystemController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\TimeCounter.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\XMLLoadUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ConfigScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\EndingScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameoverScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HitTestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayResultScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PracticeScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\RecordScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ReplayScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ReplaySelectScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelectScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TutorialScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\WorldScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrame.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrameAnime.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrameAnimeData.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrameBone.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrameFile.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFrame\SpriteFrameUtil.cpp">
+      <Filter>SpriteFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\SoundResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\TextureResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectDrawObj.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectFile.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectHolder.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectManager.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectParticle.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectTypes.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Move\EffectMoveCircular.cpp">
+      <Filter>Effect\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Move\EffectMoveDefault.cpp">
+      <Filter>Effect\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Move\EffectMoveFollow.cpp">
+      <Filter>Effect\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Move\EffectMoveVelocity.cpp">
+      <Filter>Effect\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\CollideCaster.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\CollideFunction.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\CollideObject.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\CollideSystem.cpp">
+      <Filter>Collide</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\Shape\CollideShape.cpp">
+      <Filter>Collide\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\Shape\CollideShapeFrame.cpp">
+      <Filter>Collide\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\Shape\CollideShapeLine.cpp">
+      <Filter>Collide\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\Shape\CollideShapePoint.cpp">
+      <Filter>Collide\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Collide\Shape\CollideShapeRect.cpp">
+      <Filter>Collide\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\EnemyData.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\EnemyIndicate.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\EnemyManager.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\EnemyStateData.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\EnemyTypes.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyAction.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyAttackAction.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyMoveAction.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyRotAction.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyState.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyTarget.cpp">
+      <Filter>Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeKey\TimeKey.cpp">
+      <Filter>TimeKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Attack.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\AttackData.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\AttackManager.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\AttackTypes.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackBlade.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackBullet.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackHoming.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackLaser.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackRuler.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack\Impl\AttackShield.cpp">
+      <Filter>Attack\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\Stage.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\StageData.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\StageManager.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\StageState.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\StageTelop.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\StageTypes.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\Action\StageAction.cpp">
+      <Filter>Stage\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage\Action\StagePlayerMoveAction.cpp">
+      <Filter>Stage\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Item\Item.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Item\ItemData.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Item\ItemManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Item\ItemTypes.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Score\ScoreData.cpp">
+      <Filter>Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Score\ScoreManager.cpp">
+      <Filter>Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Score\ScoreTypes.cpp">
+      <Filter>Score</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicate\Indicate.cpp">
+      <Filter>Indicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicate\IndicateBase.cpp">
+      <Filter>Indicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicate\IndicateData.cpp">
+      <Filter>Indicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicate\IndicateManager.cpp">
+      <Filter>Indicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicate\IndicateTypes.cpp">
+      <Filter>Indicate</Filter>
+    </ClCompile>
+    <ClCompile Include="Fade\FadeScreen.cpp">
+      <Filter>Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuData.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuLayer.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\MenuTypes.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuCursor.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuList.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuObject.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuScroll.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuSelector.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Object\MenuSlider.cpp">
+      <Filter>Menu\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="BGM\BGMManager.cpp">
+      <Filter>BGM</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveData\SaveDataManager.cpp">
+      <Filter>SaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveData\SaveDataTypes.cpp">
+      <Filter>SaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground\Ground.cpp">
+      <Filter>Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground\GroundData.cpp">
+      <Filter>Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground\GroundManager.cpp">
+      <Filter>Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground\GroundTypes.cpp">
+      <Filter>Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Replay\ReplayData.cpp">
+      <Filter>Replay</Filter>
+    </ClCompile>
+    <ClCompile Include="Replay\ReplayDirectory.cpp">
+      <Filter>Replay</Filter>
+    </ClCompile>
+    <ClCompile Include="Replay\ReplayManager.cpp">
+      <Filter>Replay</Filter>
+    </ClCompile>
+    <ClCompile Include="Replay\ReplayTypes.cpp">
+      <Filter>Replay</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Master|Win32">
+      <Configuration>Master</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D8A1280-16B4-401B-906D-9C1B68DD5467}</ProjectGuid>
+    <RootNamespace>ls</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Out/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Out/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Out/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Out/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">Out/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">Out/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Asteraiser_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">Asteraiser</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Asteraiser</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)P5;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>P5_d.lib;d3d9.lib;d3dx9.lib;dbghelp.lib;winmm.lib;dinput8.lib;dxguid.lib;dsound.lib;libogg_static_d.lib;libvorbis_static_d.lib;libvorbisfile_static_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)P5;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)P5;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>P5.lib;d3d9.lib;d3dx9.lib;winmm.lib;dbghelp.lib;dinput8.lib;dxguid.lib;dsound.lib;libogg_static.lib;libvorbis_static.lib;libvorbisfile_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)P5;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <ProfileGuidedDatabase>
+      </ProfileGuidedDatabase>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)P5;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>P5.lib;d3d9.lib;d3dx9.lib;dbghelp.lib;winmm.lib;dinput8.lib;dxguid.lib;dsound.lib;libogg_static.lib;libvorbis_static.lib;libvorbisfile_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)P5;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>ls.map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <ProfileGuidedDatabase>
+      </ProfileGuidedDatabase>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="icon.ico" />
+    <None Include="icon_s.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ls.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="App\App.h" />
+    <ClInclude Include="World\World.h" />
+    <ClInclude Include="World\WorldContinue.h" />
+    <ClInclude Include="World\WorldData.h" />
+    <ClInclude Include="World\WorldPause.h" />
+    <ClInclude Include="World\WorldReplayMenu.h" />
+    <ClInclude Include="World\WorldResult.h" />
+    <ClInclude Include="World\WorldTypes.h" />
+    <ClInclude Include="Player\Player.h" />
+    <ClInclude Include="Player\PlayerData.h" />
+    <ClInclude Include="Player\PlayerManager.h" />
+    <ClInclude Include="Player\PlayerTypes.h" />
+    <ClInclude Include="Player\Equip\Blade.h" />
+    <ClInclude Include="Player\Equip\Dash.h" />
+    <ClInclude Include="Player\Equip\Overdrive.h" />
+    <ClInclude Include="Player\Equip\Ruler.h" />
+    <ClInclude Include="Player\Equip\Shield.h" />
+    <ClInclude Include="Player\Equip\Spear.h" />
+    <ClInclude Include="Config\Config.h" />
+    <ClInclude Include="Config\ConfigTypes.h" />
+    <ClInclude Include="Controller\Controller.h" />
+    <ClInclude Include="Controller\ControllerManager.h" />
+    <ClInclude Include="Controller\ControllerTypes.h" />
+    <ClInclude Include="Controller\ManualController.h" />
+    <ClInclude Include="Controller\ReplayController.h" />
+    <ClInclude Include="Controller\SystemController.h" />
+    <ClInclude Include="Util\TimeCounter.h" />
+    <ClInclude Include="Util\XMLLoadUtil.h" />
+    <ClInclude Include="Scene\ConfigScene.h" />
+    <ClInclude Include="Scene\EndingScene.h" />
+    <ClInclude Include="Scene\GameoverScene.h" />
+    <ClInclude Include="Scene\HitTestScene.h" />
+    <ClInclude Include="Scene\PlayResultScene.h" />
+    <ClInclude Include="Scene\PracticeScene.h" />
+    <ClInclude Include="Scene\RecordScene.h" />
+    <ClInclude Include="Scene\ReplayScene.h" />
+    <ClInclude Include="Scene\ReplaySelectScene.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneManager.h" />
+    <ClInclude Include="Scene\StageSelectScene.h" />
+    <ClInclude Include="Scene\TestScene.h" />
+    <ClInclude Include="Scene\TitleScene.h" />
+    <ClInclude Include="Scene\TutorialScene.h" />
+    <ClInclude Include="Scene\WorldScene.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrame.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameAnime.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameAnimeData.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameBone.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameFile.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameTypes.h" />
+    <ClInclude Include="SpriteFrame\SpriteFrameUtil.h" />
+    <ClInclude Include="Resource\FontResource.h" />
+    <ClInclude Include="Resource\Resource.h" />
+    <ClInclude Include="Resource\ResourceManager.h" />
+    <ClInclude Include="Resource\ResourceTypes.h" />
+    <ClInclude Include="Resource\ResourceUtil.h" />
+    <ClInclude Include="Resource\SoundResource.h" />
+    <ClInclude Include="Resource\TextureResource.h" />
+    <ClInclude Include="Effect\Effect.h" />
+    <ClInclude Include="Effect\EffectDrawObj.h" />
+    <ClInclude Include="Effect\EffectFile.h" />
+    <ClInclude Include="Effect\EffectHolder.h" />
+    <ClInclude Include="Effect\EffectManager.h" />
+    <ClInclude Include="Effect\EffectParticle.h" />
+    <ClInclude Include="Effect\EffectTypes.h" />
+    <ClInclude Include="Effect\Move\EffectMove.h" />
+    <ClInclude Include="Effect\Move\EffectMoveCircular.h" />
+    <ClInclude Include="Effect\Move\EffectMoveDefault.h" />
+    <ClInclude Include="Effect\Move\EffectMoveFollow.h" />
+    <ClInclude Include="Effect\Move\EffectMoveVelocity.h" />
+    <ClInclude Include="Collide\CollideCaster.h" />
+    <ClInclude Include="Collide\CollideFunction.h" />
+    <ClInclude Include="Collide\CollideObject.h" />
+    <ClInclude Include="Collide\CollideObjectListener.h" />
+    <ClInclude Include="Collide\CollideSystem.h" />
+    <ClInclude Include="Collide\CollideTypes.h" />
+    <ClInclude Include="Collide\Shape\CollideShape.h" />
+    <ClInclude Include="Collide\Shape\CollideShapeFrame.h" />
+    <ClInclude Include="Collide\Shape\CollideShapeLine.h" />
+    <ClInclude Include="Collide\Shape\CollideShapePoint.h" />
+    <ClInclude Include="Collide\Shape\CollideShapeRect.h" />
+    <ClInclude Include="Enemy\Enemy.h" />
+    <ClInclude Include="Enemy\EnemyData.h" />
+    <ClInclude Include="Enemy\EnemyIndicate.h" />
+    <ClInclude Include="Enemy\EnemyManager.h" />
+    <ClInclude Include="Enemy\EnemyStateData.h" />
+    <ClInclude Include="Enemy\EnemyTypes.h" />
+    <ClInclude Include="Enemy\State\EnemyAction.h" />
+    <ClInclude Include="Enemy\State\EnemyAttackAction.h" />
+    <ClInclude Include="Enemy\State\EnemyMoveAction.h" />
+    <ClInclude Include="Enemy\State\EnemyRotAction.h" />
+    <ClInclude Include="Enemy\State\EnemyState.h" />
+    <ClInclude Include="Enemy\State\EnemyTarget.h" />
+    <ClInclude Include="TimeKey\TimeKey.h" />
+    <ClInclude Include="TimeKey\TimeKeyTypes.h" />
+    <ClInclude Include="Attack\Attack.h" />
+    <ClInclude Include="Attack\AttackData.h" />
+    <ClInclude Include="Attack\AttackManager.h" />
+    <ClInclude Include="Attack\AttackTypes.h" />
+    <ClInclude Include="Attack\Impl\AttackBlade.h" />
+    <ClInclude Include="Attack\Impl\AttackBullet.h" />
+    <ClInclude Include="Attack\Impl\AttackHoming.h" />
+    <ClInclude Include="Attack\Impl\AttackLaser.h" />
+    <ClInclude Include="Attack\Impl\AttackRuler.h" />
+    <ClInclude Include="Attack\Impl\AttackShield.h" />
+    <ClInclude Include="Stage\Stage.h" />
+    <ClInclude Include="Stage\StageData.h" />
+    <ClInclude Include="Stage\StageManager.h" />
+    <ClInclude Include="Stage\StageState.h" />
+    <ClInclude Include="Stage\StageTelop.h" />
+    <ClInclude Include="Stage\StageTypes.h" />
+    <ClInclude Include="Stage\Action\StageAction.h" />
+    <ClInclude Include="Stage\Action\StagePlayerMoveAction.h" />
+    <ClInclude Include="Item\Item.h" />
+    <ClInclude Include="Item\ItemData.h" />
+    <ClInclude Include="Item\ItemManager.h" />
+    <ClInclude Include="Item\ItemTypes.h" />
+    <ClInclude Include="Score\ScoreData.h" />
+    <ClInclude Include="Score\ScoreManager.h" />
+    <ClInclude Include="Score\ScoreTypes.h" />
+    <ClInclude Include="Indicate\Indicate.h" />
+    <ClInclude Include="Indicate\IndicateBase.h" />
+    <ClInclude Include="Indicate\IndicateData.h" />
+    <ClInclude Include="Indicate\IndicateManager.h" />
+    <ClInclude Include="Indicate\IndicateTypes.h" />
+    <ClInclude Include="Fade\FadeScreen.h" />
+    <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Menu\MenuData.h" />
+    <ClInclude Include="Menu\MenuLayer.h" />
+    <ClInclude Include="Menu\MenuListener.h" />
+    <ClInclude Include="Menu\MenuTypes.h" />
+    <ClInclude Include="Menu\Object\MenuCursor.h" />
+    <ClInclude Include="Menu\Object\MenuList.h" />
+    <ClInclude Include="Menu\Object\MenuObject.h" />
+    <ClInclude Include="Menu\Object\MenuScroll.h" />
+    <ClInclude Include="Menu\Object\MenuSelector.h" />
+    <ClInclude Include="Menu\Object\MenuSlider.h" />
+    <ClInclude Include="BGM\BGMManager.h" />
+    <ClInclude Include="SaveData\SaveDataManager.h" />
+    <ClInclude Include="SaveData\SaveDataTypes.h" />
+    <ClInclude Include="Ground\Ground.h" />
+    <ClInclude Include="Ground\GroundData.h" />
+    <ClInclude Include="Ground\GroundManager.h" />
+    <ClInclude Include="Ground\GroundTypes.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Replay\ReplayData.h" />
+    <ClInclude Include="Replay\ReplayDirectory.h" />
+    <ClInclude Include="Replay\ReplayManager.h" />
+    <ClInclude Include="Replay\ReplayTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App\App.cpp" />
+    <ClCompile Include="World\World.cpp" />
+    <ClCompile Include="World\WorldContinue.cpp" />
+    <ClCompile Include="World\WorldData.cpp" />
+    <ClCompile Include="World\WorldPause.cpp" />
+    <ClCompile Include="World\WorldReplayMenu.cpp" />
+    <ClCompile Include="World\WorldResult.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Player\PlayerData.cpp" />
+    <ClCompile Include="Player\PlayerManager.cpp" />
+    <ClCompile Include="Player\PlayerTypes.cpp" />
+    <ClCompile Include="Player\Equip\Blade.cpp" />
+    <ClCompile Include="Player\Equip\Dash.cpp" />
+    <ClCompile Include="Player\Equip\Overdrive.cpp" />
+    <ClCompile Include="Player\Equip\Ruler.cpp" />
+    <ClCompile Include="Player\Equip\Shield.cpp" />
+    <ClCompile Include="Player\Equip\Spear.cpp" />
+    <ClCompile Include="Config\Config.cpp" />
+    <ClCompile Include="Config\ConfigTypes.cpp" />
+    <ClCompile Include="Controller\Controller.cpp" />
+    <ClCompile Include="Controller\ControllerManager.cpp" />
+    <ClCompile Include="Controller\ManualController.cpp" />
+    <ClCompile Include="Controller\ReplayController.cpp" />
+    <ClCompile Include="Controller\SystemController.cpp" />
+    <ClCompile Include="Util\TimeCounter.cpp" />
+    <ClCompile Include="Util\XMLLoadUtil.cpp" />
+    <ClCompile Include="Scene\ConfigScene.cpp" />
+    <ClCompile Include="Scene\EndingScene.cpp" />
+    <ClCompile Include="Scene\GameoverScene.cpp" />
+    <ClCompile Include="Scene\HitTestScene.cpp" />
+    <ClCompile Include="Scene\PlayResultScene.cpp" />
+    <ClCompile Include="Scene\PracticeScene.cpp" />
+    <ClCompile Include="Scene\RecordScene.cpp" />
+    <ClCompile Include="Scene\ReplayScene.cpp" />
+    <ClCompile Include="Scene\ReplaySelectScene.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Scene\StageSelectScene.cpp" />
+    <ClCompile Include="Scene\TestScene.cpp" />
+    <ClCompile Include="Scene\TitleScene.cpp" />
+    <ClCompile Include="Scene\TutorialScene.cpp" />
+    <ClCompile Include="Scene\WorldScene.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrame.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrameAnime.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrameAnimeData.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrameBone.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrameFile.cpp" />
+    <ClCompile Include="SpriteFrame\SpriteFrameUtil.cpp" />
+    <ClCompile Include="Resource\Resource.cpp" />
+    <ClCompile Include="Resource\ResourceManager.cpp" />
+    <ClCompile Include="Resource\SoundResource.cpp" />
+    <ClCompile Include="Resource\TextureResource.cpp" />
+    <ClCompile Include="Effect\Effect.cpp" />
+    <ClCompile Include="Effect\EffectDrawObj.cpp" />
+    <ClCompile Include="Effect\EffectFile.cpp" />
+    <ClCompile Include="Effect\EffectHolder.cpp" />
+    <ClCompile Include="Effect\EffectManager.cpp" />
+    <ClCompile Include="Effect\EffectParticle.cpp" />
+    <ClCompile Include="Effect\EffectTypes.cpp" />
+    <ClCompile Include="Effect\Move\EffectMoveCircular.cpp" />
+    <ClCompile Include="Effect\Move\EffectMoveDefault.cpp" />
+    <ClCompile Include="Effect\Move\EffectMoveFollow.cpp" />
+    <ClCompile Include="Effect\Move\EffectMoveVelocity.cpp" />
+    <ClCompile Include="Collide\CollideCaster.cpp" />
+    <ClCompile Include="Collide\CollideFunction.cpp" />
+    <ClCompile Include="Collide\CollideObject.cpp" />
+    <ClCompile Include="Collide\CollideSystem.cpp" />
+    <ClCompile Include="Collide\Shape\CollideShape.cpp" />
+    <ClCompile Include="Collide\Shape\CollideShapeFrame.cpp" />
+    <ClCompile Include="Collide\Shape\CollideShapeLine.cpp" />
+    <ClCompile Include="Collide\Shape\CollideShapePoint.cpp" />
+    <ClCompile Include="Collide\Shape\CollideShapeRect.cpp" />
+    <ClCompile Include="Enemy\Enemy.cpp" />
+    <ClCompile Include="Enemy\EnemyData.cpp" />
+    <ClCompile Include="Enemy\EnemyIndicate.cpp" />
+    <ClCompile Include="Enemy\EnemyManager.cpp" />
+    <ClCompile Include="Enemy\EnemyStateData.cpp" />
+    <ClCompile Include="Enemy\EnemyTypes.cpp" />
+    <ClCompile Include="Enemy\State\EnemyAction.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="Enemy\State\EnemyAttackAction.cpp" />
+    <ClCompile Include="Enemy\State\EnemyMoveAction.cpp" />
+    <ClCompile Include="Enemy\State\EnemyRotAction.cpp" />
+    <ClCompile Include="Enemy\State\EnemyState.cpp" />
+    <ClCompile Include="Enemy\State\EnemyTarget.cpp" />
+    <ClCompile Include="TimeKey\TimeKey.cpp" />
+    <ClCompile Include="Attack\Attack.cpp" />
+    <ClCompile Include="Attack\AttackData.cpp" />
+    <ClCompile Include="Attack\AttackManager.cpp" />
+    <ClCompile Include="Attack\AttackTypes.cpp" />
+    <ClCompile Include="Attack\Impl\AttackBlade.cpp" />
+    <ClCompile Include="Attack\Impl\AttackBullet.cpp" />
+    <ClCompile Include="Attack\Impl\AttackHoming.cpp" />
+    <ClCompile Include="Attack\Impl\AttackLaser.cpp" />
+    <ClCompile Include="Attack\Impl\AttackRuler.cpp" />
+    <ClCompile Include="Attack\Impl\AttackShield.cpp" />
+    <ClCompile Include="Stage\Stage.cpp" />
+    <ClCompile Include="Stage\StageData.cpp" />
+    <ClCompile Include="Stage\StageManager.cpp" />
+    <ClCompile Include="Stage\StageState.cpp" />
+    <ClCompile Include="Stage\StageTelop.cpp" />
+    <ClCompile Include="Stage\StageTypes.cpp" />
+    <ClCompile Include="Stage\Action\StageAction.cpp" />
+    <ClCompile Include="Stage\Action\StagePlayerMoveAction.cpp" />
+    <ClCompile Include="Item\Item.cpp" />
+    <ClCompile Include="Item\ItemData.cpp" />
+    <ClCompile Include="Item\ItemManager.cpp" />
+    <ClCompile Include="Item\ItemTypes.cpp" />
+    <ClCompile Include="Score\ScoreData.cpp" />
+    <ClCompile Include="Score\ScoreManager.cpp" />
+    <ClCompile Include="Score\ScoreTypes.cpp" />
+    <ClCompile Include="Indicate\Indicate.cpp" />
+    <ClCompile Include="Indicate\IndicateBase.cpp" />
+    <ClCompile Include="Indicate\IndicateData.cpp" />
+    <ClCompile Include="Indicate\IndicateManager.cpp" />
+    <ClCompile Include="Indicate\IndicateTypes.cpp" />
+    <ClCompile Include="Fade\FadeScreen.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Menu\MenuData.cpp" />
+    <ClCompile Include="Menu\MenuLayer.cpp" />
+    <ClCompile Include="Menu\MenuTypes.cpp" />
+    <ClCompile Include="Menu\Object\MenuCursor.cpp" />
+    <ClCompile Include="Menu\Object\MenuList.cpp" />
+    <ClCompile Include="Menu\Object\MenuObject.cpp" />
+    <ClCompile Include="Menu\Object\MenuScroll.cpp" />
+    <ClCompile Include="Menu\Object\MenuSelector.cpp" />
+    <ClCompile Include="Menu\Object\MenuSlider.cpp" />
+    <ClCompile Include="BGM\BGMManager.cpp" />
+    <ClCompile Include="SaveData\SaveDataManager.cpp" />
+    <ClCompile Include="SaveData\SaveDataTypes.cpp" />
+    <ClCompile Include="Ground\Ground.cpp" />
+    <ClCompile Include="Ground\GroundData.cpp" />
+    <ClCompile Include="Ground\GroundManager.cpp" />
+    <ClCompile Include="Ground\GroundTypes.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Master|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Replay\ReplayData.cpp" />
+    <ClCompile Include="Replay\ReplayDirectory.cpp" />
+    <ClCompile Include="Replay\ReplayManager.cpp" />
+    <ClCompile Include="Replay\ReplayTypes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P5\P5.vcxproj">
+      <Project>{c95557eb-3c26-4da6-87db-7f6dcf181c99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
