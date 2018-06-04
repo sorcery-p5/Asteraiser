@@ -7,7 +7,8 @@
 
 これは、サークルOBLIQUEGLASSで2011年に頒布した、  
 ブレードSTG「Asteraiser」のソースコードをまとめたものです。
-
+http://d.hatena.ne.jp/sorcery/20141227
+詳しい解説はこちらをお読みください
 
 ### □ ビルド環境
 - VisualStudio2010を使用しています。
