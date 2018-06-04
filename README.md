@@ -3,22 +3,22 @@
 
 
 　　　　2014　OBLIQUEGLASS
-
-
-　　□はじめに
+    
+    
+　　□ はじめに
 
 これは、サークルOBLIQUEGLASSで2011年に頒布した、
 ブレードSTG「Asteraiser」のソースコードをまとめたものです。
 
 
-　　□ビルド環境
+　　□ ビルド環境
 　
 ・VisualStudio2010を使用しています。
 ・DirectX9.0c（2010 june）が必要です。
 ・libOggが必要です。
 
 
-　　□各部の構成
+　　□ 各部の構成
 　　
 　・ファイル構成
 
