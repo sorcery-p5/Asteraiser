@@ -114,7 +114,7 @@ http://d.hatena.ne.jp/sorcery/20141227
 
 - System               windows関連。
 	- Timer              ゲームループの時間管理
-	- WInddow            ウィンドウの生成とメッセージ管理。
+	- Window             ウィンドウの生成とメッセージ管理。
 
 - Tone                 サウンド。
 	- Device             サウンドデバイスのラッパー。
